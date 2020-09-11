@@ -1,7 +1,8 @@
 * {box-sizing: border-box;}
 
 body {
-  margin: 0;
+  margin: 1;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -82,7 +83,30 @@ body {
 .responsive {
   width: 100%;
   height: auto;
+
 }
+.left{
+  float: left;
+  width: 70%;
+  
+}
+.header-img{
+background: #E6E7E8;
+padding-bottom: 2px;
+}
+.right{
+  float: right;
+  width: 30%;
+  
+}
+.img1{
+  width: 100%;
+  max-height: 500px;
+}
+.has1{
+  margin-left:80px; 
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
@@ -99,4 +123,33 @@ body {
   .topnav input[type=text] {
     border: 1px solid #ccc;  
   }
+}
+
+/* Three columns side by side */
+.column {
+
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #F5F5F5;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  
 }
